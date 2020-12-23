@@ -1,0 +1,292 @@
+$veryDarkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$brightBlue: hsl(224, 93%, 58%);
+$moderateCyan: hsl(170, 45%, 43%);
+$lightGrayishBlue: hsl(240, 75%, 98%);
+$lightGray: hsl(0, 0%, 75%);
+
+#email-check-1 {
+    color: red;
+    text-align: left;
+    display: none;
+}
+#email-check-2 {
+    text-align: left;
+    display: none;
+}
+.illustration {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.btn {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    border-radius: 2px;
+    height: 38px;
+}
+input {
+    border-radius: 2px;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-400 {
+    font-weight: 400;
+}
+p {
+    line-height: 1.4;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    .content {
+        header {
+            font-family: "Raleway", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            .right {
+                a {
+                    margin-left: 2em;
+                    text-decoration: none;
+                    color: $veryDarkBlue;
+                }
+            }
+        }
+        .first-section {
+            display: flex;
+            flex-direction: column;
+
+            .top-form {
+                color: $veryDarkBlue;
+                font-family: "Raleway", sans-serif;
+                text-align: center;
+                margin-top: 3em;
+            }
+            form {
+                input {
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+        .second-section {
+            background-image: url("../images/bg-curve-mobile.svg");
+            background-size: cover;
+            background-position: center;
+            .container {
+                display: flex;
+                flex-direction: column;
+                .product-description {
+                    color: $veryDarkBlue;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: "Raleway", sans-serif;
+                    h4 {
+                        text-align: center;
+                    }
+                    .fylo-link {
+                        text-align: center;
+                        a {
+                            color: $moderateCyan;
+                            text-decoration: none;
+                            border-bottom: $moderateCyan 1px solid;
+                        }
+                    }
+                }
+                .description-card {
+                    padding-top: 1.5em;
+                    padding-bottom: 1.5em;
+                    padding-right: 1em;
+                    padding-left: 1em;
+                    border-radius: 4px;
+                    background-color: white;
+                    width: 80%;
+                    align-self: center;
+                    -webkit-box-shadow: 0px 0px 11px 1px rgba(191, 191, 191, 0.87);
+                    box-shadow: 0px 0px 11px 1px rgba(191, 191, 191, 0.87);
+                    p {
+                        line-height: 1.5;
+                        font-family: "Open Sans", sans-serif;
+                    }
+                    .profile {
+                        display: flex;
+                        .profile-img {
+                            width: 4em;
+                            height: auto;
+                            border-radius: 2em;
+                        }
+                        .profile-name {
+                            margin-left: 1em;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            p {
+                                font-size: 0.75em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .third-section {
+            background-color: $desaturatedBlue;
+            color: $lightGrayishBlue;
+            text-align: center;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        footer {
+            background-color: $veryDarkBlue;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            .container {
+                .logo {
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+                .footer-links {
+                    display: flex;
+                    flex-direction: column;
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 1.5em;
+                        margin-bottom: 1.5em;
+                        a {
+                            margin-top: 0.5em;
+                            margin-bottom: 0.5em;
+                            color: $lightGrayishBlue;
+                            text-decoration: none;
+
+                            i {
+                                margin-right: 1em;
+                            }
+                        }
+                        a:hover {
+                            color: $brightBlue;
+                        }
+                    }
+                    .social-media {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        align-items: center;
+                        a {
+                            border-radius: 1em;
+                            margin-left: 0.5em;
+                            margin-right: 0.5em;
+                            border: $lightGrayishBlue 1px solid;
+                            text-align: center;
+                            i {
+                                margin: 0.5em;
+                                width: 1em;
+                            }
+                        }
+                        a:hover {
+                            color: $brightBlue;
+                            border: $brightBlue 1px solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        .content {
+            .first-section {
+                display: flex;
+                flex-direction: row-reverse;
+                .illustration {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 3em;
+                }
+                .top-form {
+                    text-align: left;
+                    margin-right: 3em;
+                }
+            }
+            .second-section {
+                background-image: url("../images/bg-curve-desktop.svg");
+                .container {
+                    flex-direction: row-reverse;
+                    .product-description {
+                        h4 {
+                            text-align: left;
+                        }
+                        .fylo-link {
+                            text-align: left;
+                        }
+                    }
+
+                    .illustration {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 3em;
+                    }
+                    .description-card {
+                        align-self: start;
+                    }
+                }
+            }
+            .third-section {
+                .container {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .early-access {
+                        width: 40%;
+                    }
+                    form {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        .content {
+            .first-section {
+                .illustration {
+                    margin-left: 3em;
+                }
+                .top-form {
+                    text-align: left;
+                    margin-right: 3em;
+                    form {
+                        display: grid;
+                        grid-template-columns: 60% 40%;
+                        button {
+                            margin-left: 1em;
+                        }
+                    }
+                }
+            }
+            footer {
+                .container {
+                    .footer-links {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,257 @@
+#email-check-1 {
+  color: red;
+  text-align: left;
+  display: none;
+}
+
+#email-check-2 {
+  text-align: left;
+  display: none;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  border-radius: 2px;
+  height: 38px;
+}
+
+input {
+  border-radius: 2px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.4;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body .content header {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+body .content header .right a {
+  margin-left: 2em;
+  text-decoration: none;
+  color: #070439;
+}
+body .content .first-section {
+  display: flex;
+  flex-direction: column;
+}
+body .content .first-section .top-form {
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 3em;
+}
+body .content .first-section form input {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+body .content .second-section {
+  background-image: url("../images/bg-curve-mobile.svg");
+  background-size: cover;
+  background-position: center;
+}
+body .content .second-section .container {
+  display: flex;
+  flex-direction: column;
+}
+body .content .second-section .container .product-description {
+  color: #070439;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+}
+body .content .second-section .container .product-description h4 {
+  text-align: center;
+}
+body .content .second-section .container .product-description .fylo-link {
+  text-align: center;
+}
+body .content .second-section .container .product-description .fylo-link a {
+  color: #3c9f8f;
+  text-decoration: none;
+  border-bottom: #3c9f8f 1px solid;
+}
+body .content .second-section .container .description-card {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 4px;
+  background-color: white;
+  width: 80%;
+  align-self: center;
+  box-shadow: 0px 0px 11px 1px rgba(191, 191, 191, 0.87);
+}
+body .content .second-section .container .description-card p {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+body .content .second-section .container .description-card .profile {
+  display: flex;
+}
+body .content .second-section .container .description-card .profile .profile-img {
+  width: 4em;
+  height: auto;
+  border-radius: 2em;
+}
+body .content .second-section .container .description-card .profile .profile-name {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .content .second-section .container .description-card .profile .profile-name p {
+  font-size: 0.75em;
+}
+body .content .third-section {
+  background-color: #585989;
+  color: #f6f6fe;
+  text-align: center;
+}
+body .content .third-section .container {
+  display: flex;
+  flex-direction: column;
+}
+body .content footer {
+  background-color: #070439;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+body .content footer .container .logo img {
+  filter: brightness(0) invert(1);
+}
+body .content footer .container .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+body .content footer .container .footer-links .links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+body .content footer .container .footer-links .links a {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #f6f6fe;
+  text-decoration: none;
+}
+body .content footer .container .footer-links .links a i {
+  margin-right: 1em;
+}
+body .content footer .container .footer-links .links a:hover {
+  color: #3065f8;
+}
+body .content footer .container .footer-links .social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+body .content footer .container .footer-links .social-media a {
+  border-radius: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: #f6f6fe 1px solid;
+  text-align: center;
+}
+body .content footer .container .footer-links .social-media a i {
+  margin: 0.5em;
+  width: 1em;
+}
+body .content footer .container .footer-links .social-media a:hover {
+  color: #3065f8;
+  border: #3065f8 1px solid;
+}
+
+@media screen and (min-width: 768px) {
+  body .content .first-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body .content .first-section .illustration {
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+  }
+  body .content .first-section .top-form {
+    text-align: left;
+    margin-right: 3em;
+  }
+  body .content .second-section {
+    background-image: url("../images/bg-curve-desktop.svg");
+  }
+  body .content .second-section .container {
+    flex-direction: row-reverse;
+  }
+  body .content .second-section .container .product-description h4 {
+    text-align: left;
+  }
+  body .content .second-section .container .product-description .fylo-link {
+    text-align: left;
+  }
+  body .content .second-section .container .illustration {
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+  }
+  body .content .second-section .container .description-card {
+    align-self: start;
+  }
+  body .content .third-section .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .content .third-section .container .early-access {
+    width: 40%;
+  }
+  body .content .third-section .container form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  body .content .first-section .illustration {
+    margin-left: 3em;
+  }
+  body .content .first-section .top-form {
+    text-align: left;
+    margin-right: 3em;
+  }
+  body .content .first-section .top-form form {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  body .content .first-section .top-form form button {
+    margin-left: 1em;
+  }
+  body .content footer .container .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
