@@ -48,6 +48,10 @@ body .content header {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+body .content header .left img {
+  height: 35px;
+  width: auto;
+}
 body .content header .right a {
   margin-left: 2em;
   text-decoration: none;
@@ -187,6 +191,10 @@ body .content footer .container .footer-links .social-media a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  body .content header .left img {
+    height: auto;
+    width: auto;
+  }
   body .content .first-section {
     display: flex;
     flex-direction: row-reverse;

@@ -48,6 +48,12 @@ body {
             align-items: center;
             padding-top: 2em;
             padding-bottom: 2em;
+            .left {
+                img {
+                    height: 35px;
+                    width: auto;
+                }
+            }
             .right {
                 a {
                     margin-left: 2em;
@@ -204,6 +210,14 @@ body {
 @media screen and (min-width: 768px) {
     body {
         .content {
+            header {
+                .left {
+                    img {
+                        height: auto;
+                        width: auto;
+                    }
+                }
+            }
             .first-section {
                 display: flex;
                 flex-direction: row-reverse;
